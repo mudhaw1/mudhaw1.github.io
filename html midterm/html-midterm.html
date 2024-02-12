@@ -25,9 +25,9 @@
 
     <p>This is another paragraph without proper indentation.</p>
     
-    <img src="image.jpg">
+    <img src="image.jpg" alt="two states of a programmer meme">
 
-    <a href="https://www.example.com" target="_blank">Click me!</img></a>
+    <a href="https://www.example.com" target="_blank">Click me!</a>
 
     <table>
         <tr>
@@ -36,13 +36,14 @@
         </tr>
         <tr>
             <td>John</td>
-            <td>25<td>
+            <td>25</td>
         </tr>
         <tr>
             <td>Jane</td>
             <td>30</td>
         </tr>
     </table>
+
     <img src="error.jpeg" alt="Error Image">
 
     <p style="text-align: center;">This is centered text.</p>
@@ -61,5 +62,37 @@
         <dt>Descriptive Item Title</dt>
         <dd>Descriptive Item Text</dd>
     </dl>
+
+    <ol>
+        <li> No doctype tag, added to top of the page</li>
+        <li>html lang=en should be outside of the head element, should be html lang=en not html language=english, 
+            moved the element outside head element and changed to html lang="en"</li>
+        <li>No metadata in head, added 
+            meta charset="UTF-8"
+            meta name="viewport" content="width=device-width, initial-scale=1.0” to head element.</li>
+        <li>No head closing tag, added the closing tag before body element.</li>
+        <li>No closing tag for h1 tag, to fix this I added a closing tag. </li>
+        <li>No beginning tag for p, added a beginning tag before the paragraph.</li>
+        <li>Line 13, started with an ordered list but the closing tag is unordered list, changed the closing tag to be /ol.</li>
+        <li>No end tag for p element on line 26, added /p</li>
+        <li>Img element must include alt attribute, line 28 changed to img src="image.jpg" alt="two states of a programmer meme"</li>
+        <li>No closing tag for link on line 30 , added /a</li>
+        <li>Closing img tag on line 30 with no beginning tag, removed the end tag.</li>
+        <li>No closing tag for td element on line 39, added a closing tag.</li>
+        <li>No closing tag for the table element on line 32, added a closing tag before the image</li>
+        <li>Inside the img tag there is a syntax error it should be img src=“”, changed to 
+            img src="error.jpeg" alt="Error Image"</li>
+        <li>Center tag is not supported in html 5 and no p tags, changed to -> p style="text-align: center;" This is centered text. /p>.</li>
+        <li> Incorrect syntax for  text background color, changed to p style=“background-color:lightgray”.</li>
+        <li>Unclosed comment, closed the comment on the same line (54)</li>
+        <li>No closing tag for link, added it (line 56)</li>
+        <li> em element should be closed before p element since it is on the inside of the paragraph, incorrect underline element, should be u>. Changed to p> u> Underlined text /u> /p></li>
+        <li>Elements within dl> cannot be li>, changed to     
+            dl>
+                dt> Descriptive Item Title /dt>
+                dd> Descriptive Item Text /dd>
+            /dl>
+        </li>
+    </ol>
 </body>
 </html>
