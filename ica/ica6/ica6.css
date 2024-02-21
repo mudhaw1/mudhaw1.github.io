@@ -36,14 +36,16 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+  background: url(logo.png) no-repeat;
+  filter: drop-shadow(5px 5px 5px black);
 }
 
 /* Your CSS below here */
 
 article{
+  background-color: white;
     border-top: 1mm solid red;
     border-bottom: 1mm solid red;
-    background:linear-gradient(to bottom, rgba(0,0,0,0.2) 20%, rgba(0,0,0) 80%, rgba(0,0,0,0.2)), url(top-image.png) no-repeat left top, url(bottom-image.png) no-repeat left bottom ;
-    background-color: white;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.2) 20%, rgba(0,0,0) 80%, rgba(0,0,0,0.2)), url(top-image.png) no-repeat left top, url(bottom-image.png) no-repeat left bottom ;  
 }
 
