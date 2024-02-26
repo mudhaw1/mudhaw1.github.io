@@ -1,0 +1,65 @@
+body{
+    background: url(bgimg.jpg) no-repeat;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+p{
+    color: white;
+    font-size: 9px;
+    background-color: purple;
+    padding: 5px;
+}
+.container{
+    display: inline;
+    background-color: rgba(0, 0, 0, 30%);
+    border: 2px solid purple;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 17px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 30px;
+    height: 20px;
+    padding: 3px;  
+}
+.overlay{
+    position: absolute;
+    top: 32px;
+    left: 2%;
+    border: 1px solid white;
+    background-color: purple;
+}
+.overlay2{
+    position: absolute;
+    top: 32px;
+    left: 11%;
+    border: 1px solid white;
+    background-color: purple;
+}
+.logo{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 100px;
+    height: auto;
+}
+.score{
+    position: absolute;
+    top: 0;
+    width: fit-content;
+    height: auto;
+    background-color: rgba(0, 0, 0, 50%);
+    font-family: sans-serif;
+    padding-left: 36px;
+    padding-right: 40px;
+    border: 2px solid purple;
+}
+
+
+
+
+
