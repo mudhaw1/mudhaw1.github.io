@@ -15,6 +15,8 @@ body{
 #text1 {
     left: 150%;
     top: 250px;
+    position: absolute;
+    left: 75%;
 
 }
 
@@ -25,15 +27,20 @@ body{
     border-radius:3px;
     border-color:purple;
     background-color: mediumvioletred;
+    
+
 }
 
 #text2 {
+    position: relative;
+    top: 170px;  
 }
 
 #box3{
-
-border-radius: 10px;
-background-color: orangered;
+    border-radius:10px;
+    background-color: orangered;
+    position: sticky;
+    top: -1px;
 }
 
 #text3 {
@@ -41,3 +48,7 @@ background-color: orangered;
     border: 5px solid green;
 }
 
+#box4 {
+    height: 500px;
+    background-color: blueviolet;
+}
