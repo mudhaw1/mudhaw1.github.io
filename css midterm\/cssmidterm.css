@@ -8,8 +8,6 @@ h1{
     font-size: 60px;
     border-bottom: 5px solid rgb(255, 255, 255);
     max-width: fit-content;
-    position: sticky;
-    top: -1;
 }
 
 nav{
@@ -17,7 +15,7 @@ nav{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     border: 5px solid white;
     position: sticky;
-    top: -3;
+    top: -1;
 }
 
 .par1{
@@ -25,3 +23,11 @@ nav{
     position: absolute;
     margin-left:50%;
 }
+
+.icon:hover{
+    background-image: url(musicnoteicon.jpg);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
