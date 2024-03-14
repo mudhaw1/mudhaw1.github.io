@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    color: rgb(168, 163, 158);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    max-width: fit-content;
+    position: sticky;
+    top: -1;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 5px solid white;
+    position: sticky;
+    top: -3;
+}
+
+.par1{
+    display:flex;
+    position: absolute;
+    margin-left:50%;
+}
