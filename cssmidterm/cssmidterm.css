@@ -1,33 +1,119 @@
+
+
 body{
     background-color: black;
     color: rgb(168, 163, 158);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+div{white-space: normal;}
+a:link,a:visited {
+    color: rgb(168, 163, 158);
+    text-decoration: none;
+}
+
+.img{
+    position: fixed;
+    top: 0;
+    display: inline;
+    padding-left: 20%;
 }
 
 h1{
-    font-size: 60px;
-    border-bottom: 5px solid rgb(255, 255, 255);
-    max-width: fit-content;
+    border:  10px black solid;
+    background-color: black;
+    position: relative;
+    font-size: 160px; 
 }
 
-nav{
+.dropdown{
+    max-width: 300px;
+    font-size: larger;
+    padding: 10px;
+    position: relative;
+    display: inline-block, grid;
+    margin: auto;
+}
+
+.dpcontent{
+    padding: 20px;
+    opacity: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: 5px solid white;
+    max-width: fit-content;
+    position: absolute;
+    margin-left: 0;
+    grid-template-rows: max-content;
+}
+
+.dropdown:hover
+.dpcontent {
+    opacity: 1;
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    transform: translate3d(0,100%,0);
+}
+
+
+.sticky{
     position: sticky;
-    top: -1;
+    top: -1px;
 }
 
-.par1{
-    display:flex;
-    position: absolute;
-    margin-left:50%;
+.fadeup{
+    animation-name: fadeup;
+    animation-timeline: scroll();
+}
+@keyframes fadeup {
+    from{
+        opacity: 1;
+        transform: translate3d(0, 100%,0);
+    }
+    25%{ opacity: 0.25}
+    to{
+        opacity: 0;
+        transform: none;
+    }
+}
+.small{
+    animation-name: smallt;
+    animation-timeline: scroll();
+    animation-duration: 0.25s;
 }
 
-.icon:hover{
-    background-image: url(musicnoteicon.jpg);
-    position: absolute;
-    width: 30px;
-    height: 30px;
+@keyframes smallt{
+    from{font-size: 160px;}
+    25%{font-size:50px;}
+    to{font-size:30px;}
 }
+
+@media screen  and (maxwidth<499px){
+    .dropdown{
+        max-width: 300px;
+        font-size: larger;
+        padding: 10px;
+        position: relative;
+        display: inline-block, grid;
+        margin: auto;
+    }
+    
+    .dpcontent{
+        padding: 20px;
+        opacity: 0;
+        display: grid;
+        max-width: fit-content;
+        position: absolute;
+        margin-left: 0;
+        grid-template-rows: max-content;
+    }
+
+    .dropdown:focus, .dropdown:active{
+        opacity: 1;
+        cursor: pointer;
+        display: inline;
+        position: relative;
+        transform: translate3d(0,100%,0);
+        color: grey;
+    }
+}    
 
