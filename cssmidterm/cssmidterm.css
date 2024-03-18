@@ -87,6 +87,29 @@ h1{
 }
 
 @media screen  and (maxwidth<499px){
+    body{
+        background-color: black;
+        color: rgb(168, 163, 158);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    div{white-space: normal;}
+    a:link,a:visited {
+        color: rgb(168, 163, 158);
+        text-decoration: none;
+    }
+    
+    .img{
+        position: fixed;
+        top: 0;
+        display: inline;
+        padding-left: 20%;
+    }
+    
+    h1{
+        position: relative;
+        font-size: 160px; 
+    }
     .dropdown{
         max-width: 300px;
         font-size: larger;
@@ -114,5 +137,37 @@ h1{
         transform: translate3d(0,100%,0);
         color: grey;
     }
+
+.sticky{
+    position: sticky;
+    top: -1px;
+}
+
+.fadeup{
+    animation-name: fadeup;
+    animation-timeline: scroll();
+}
+@keyframes fadeup {
+    from{
+        opacity: 1;
+        transform: translate3d(0, 100%,0);
+    }
+    25%{ opacity: 0.25}
+    to{
+        opacity: 0;
+        transform: none;
+    }
+}
+.small{
+    animation-name: smallt;
+    animation-timeline: scroll();
+    animation-duration: 0.25s;
+}
+
+@keyframes smallt{
+    from{font-size: 160px;}
+    25%{font-size:50px;}
+    to{font-size:30px;}
+}
 }    
 
