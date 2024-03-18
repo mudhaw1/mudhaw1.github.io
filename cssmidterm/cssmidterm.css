@@ -52,6 +52,7 @@ h1{
     display: inline;
     position: relative;
     transform: translate3d(0,100%,0);
+    transition: all ease-in 0.25s;
 }
 
 
