@@ -20,8 +20,6 @@ a:link,a:visited {
 }
 
 h1{
-    border:  10px black solid;
-    background-color: black;
     position: relative;
     font-size: 160px; 
 }
