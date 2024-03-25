@@ -4,31 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Silly story generator</title>
-    <script src="main.js"></script>
 
     <style>
       body {
-        font-family: helvetica, sans-serif;
-        width: 350px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 400px;
+        background-image: url(snowcat.jpg);
       }
 
       label {
-        font-weight: bold;
+        font-weight: bolder;
+        padding: 10px;
       }
 
       div {
         padding-bottom: 20px;
+        color: rgb(13, 13, 47);
       }
 
       input[type="text"] {
         padding: 5px;
         width: 150px;
+        border: rgb(104, 104, 179) 2px solid;
       }
 
       p {
-        background: #ffc125;
-        color: #5e2612;
+        background: rgb(104, 104, 179);
+        color: rgb(13, 13, 47);
         padding: 10px;
+        width: 500px;
+        height: auto;
         visibility: hidden;
       }
     </style>
@@ -50,5 +55,6 @@
     </div>
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
+    <script src="main.js"></script>
   </body>
 </html>
