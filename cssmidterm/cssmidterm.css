@@ -34,7 +34,6 @@ h1{
     display: inline-block, grid;
     margin: auto;
 }
-
 .dpcontent{
     padding: 20px;
     opacity: 0;
@@ -44,7 +43,6 @@ h1{
     margin-left: 0;
     grid-template-rows: max-content;
 }
-
 .dropdown:hover
 .dpcontent {
     opacity: 1;
@@ -54,8 +52,6 @@ h1{
     transform: translate3d(0,100%,0);
     transition: all ease-in 0.25s;
 }
-
-
 .sticky{
     position: sticky;
     top: -1px;
