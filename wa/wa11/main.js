@@ -11,11 +11,11 @@ const images = ['pic1.png', 'pic2.jpg', 'pic3.jpg','pic4.jpg', 'pic5.jpg'];
 /* Declaring the alternative text for each image file */
 
 const altText = {
-    'pic1.png': 'blue human eye',
-    'pic2.jpg': 'closeup of rock pattern',
-    'pic3.jpg': 'white and purple flowers',
-    'pic4.jpg': 'egyptian drawings', 
-    'pic5.jpg': 'moth on a leaf',
+    'pic1.png': 'me giving my cat a forehead kiss',
+    'pic2.jpg': ' mirror pic of me at the gym',
+    'pic3.jpg': 'my package and bug making a funny face',
+    'pic4.jpg': 'me and bug (again)', 
+    'pic5.jpg': 'me and friends',
 }
 
 /* Looping through images */
