@@ -20,11 +20,13 @@ a:link,a:visited {
 }
 
 h1{
-    position: relative;
+    position: absolute;
     font-size: 160px; 
+    top: 10px;
 }
 
 .dropdown{
+    top: 1000px;
     max-width: 300px;
     font-size: larger;
     padding: 10px;
