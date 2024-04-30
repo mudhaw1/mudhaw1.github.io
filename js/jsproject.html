@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Control</title>
+  <link rel="stylesheet" href="jsproject.css">
+</head>
+<body>
+  <div class="volume-control">
+    <div class="volume-bar" id="volumeBar">
+      <div class="volume-level"></div>
+    </div>
+  <div><h1>VOLUME</h1></div>
+  </div>
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <span class="close">×</span>
+      <p>This volume is already in use. Please choose another volume.</p>
+    </div>
+    <div class="subscription-popup" id="subscriptionPopup">
+      <span class="close">×</span>
+      <p>To change the volume, please subscribe:</p>
+      <button onclick="buySubscription('monthly')">Subscribe $2.99/month</button>
+      <button onclick="buySubscription('3months')">Subscribe $3.99 for 3 months</button>
+    </div>
+  </div>
+  <script src="jsproject.js"></script>
+</body>
+</html>
