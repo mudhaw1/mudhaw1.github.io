@@ -1,7 +1,7 @@
 const volumeBar = document.getElementById('volumeBar');
 const overlay = document.getElementById('overlay');
 const subscriptionPopup = document.getElementById('subscriptionPopup');
-const closeBtn = document.getElementsByClassName('close');
+
 
 volumeBar.addEventListener('mousedown', function(event) {
   event.preventDefault();
@@ -20,21 +20,25 @@ function buySubscription(plan) {
     showPopup("To access this feature, please buy the 3-months subscription for $3.99.");
   }
 }
-function closePopup() {
+
+function exit(){
   overlay.style.display = 'none';
-  generateTabs();
+  genTabs(20); 
 }
 
-function generateTabs() {
+function genTabs(tabLimit) {
   const body = document.body;
-  const tabContent = ["Please try again", "Please try once more", "Retry", "Give it another shot", "Please give another attempt"];
+  const tabContent = ["Please try again", "Bruh", "Pwease just buy the subscwiption", "please try again :(", ":)"];
 
-  while (true) {
+  let tabCount = 0;
+
+  while (tabCount < tabLimit) {
     const tab = document.createElement('div');
     tab.classList.add('tab');
     tab.style.left = `${Math.random() * 90}%`;
     tab.style.top = `${Math.random() * 90}%`;
     tab.textContent = tabContent[Math.floor(Math.random() * tabContent.length)];
     body.appendChild(tab);
+    tabCount++;
   }
 }
