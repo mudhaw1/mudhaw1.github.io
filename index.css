@@ -1,0 +1,19 @@
+body{
+    background-color: bisque;
+    text-align: center;
+
+}
+h1{
+    color: rgb(2, 2, 93);
+}
+.photo{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+}
+img{
+    max-width: 500px;
+}
