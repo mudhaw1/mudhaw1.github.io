@@ -49,8 +49,7 @@ Open a terminal, and go to the directory where the `package.json` file is. Then
 run `npm install`, or as a shortcut, simply `npm i`. It will read the package
 file (and you should check it out too!) and see what the dependencies are. It
 then goes off to npmjs.com and fetches them. It also gets the
-dependencies-of-dependencies, and all of _their_ dependencies as well.
-
+dependencies-of-dependencies, and all of _their_ dependencies as well.cd 
 If you get warnings about packages being deprecated, don't worry about it.
 
 The homework depends on a few things, in case you're curious. The rabbit hole
